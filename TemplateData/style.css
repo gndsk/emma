@@ -19,15 +19,9 @@ body { padding: 0; margin: 0 }
 
   #unity-webgl{
 	/* 16:9 */
-	width: 450px ;/*デフォルトの横幅*/
-	height: 800px ;/*デフォルトの縦幅*/
+	width: 900px ;/*デフォルトの横幅*/
+	height: 1600px ;/*デフォルトの縦幅*/
 }
-
-@media screen and (max-height: 1700px){/*1240px以下*/
-	#unity-webgl{
-		width: 900px ;
-		height: 1600px ;
-	}
 
 @media screen and (max-height: 1250px){/*1240px以下*/
 	#unity-webgl{
@@ -41,16 +35,10 @@ body { padding: 0; margin: 0 }
 		height: 800px ;
 	}
 
-@media screen and (max-height: 800px){/*1240px以下*/
+@media screen and (max-height: 750px){/*1240px以下*/
 	#unity-webgl{
 		width: 360px ;
 		height: 640px ;
-	}
-}
-@media screen and (max-height: 600px){/*1023px以下*/
-	#unity-webgl{
-		width: 270px ;
-		height: 480px ;
 	}
 }
 

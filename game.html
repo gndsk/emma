@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | DashInTheMirror</title>
+    <title>ENMA's MIRROR</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -95,13 +95,51 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
   		
-  		canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+  		
+  		var setWidth;
+  		var setHeight;
+  		
+  		if(window.innerHeight >= 1250){
+  		setWidth = 900;
+  		setHeight = 1600;
+  		}else if(window.innerHeight >= 900){
+  		setWidth = 630;
+  		setHeight = 1120;
+  		}else if(window.innerHeight >= 750){
+  		setWidth = 450;
+  		setHeight = 800;
+  		}else{
+  		setWidth = 360;
+  		setHeight = 640;
+		}  		
+  		
+  		
+  		
+  		canvas.style.width = setWidth + 'px';
+        canvas.style.height = setHeight + 'px';
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-  		canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+
+  		
+  		var setWidth;
+  		var setHeight;
+  		
+  		if(window.innerHeight >= 1250){
+  		setWidth = 900;
+  		setHeight = 1600;
+  		}else if(window.innerHeight >= 900){
+  		setWidth = 630;
+  		setHeight = 1120;
+  		}else if(window.innerHeight >= 750){
+  		setWidth = 450;
+  		setHeight = 800;
+  		}else{
+  		setWidth = 360;
+  		setHeight = 640;
+		}  		
+
+
       }
 
       loadingBar.style.display = "block";
