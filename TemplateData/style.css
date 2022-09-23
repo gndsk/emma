@@ -22,10 +22,29 @@ body { padding: 0; margin: 0 }
 	width: 450px ;/*デフォルトの横幅*/
 	height: 800px ;/*デフォルトの縦幅*/
 }
+
+@media screen and (max-height: 1700px){/*1240px以下*/
+	#unity-webgl{
+		width: 900px ;
+		height: 1600px ;
+	}
+
+@media screen and (max-height: 1250px){/*1240px以下*/
+	#unity-webgl{
+		width: 630px ;
+		height: 1120px ;
+	}
+	
+@media screen and (max-height: 900px){/*1240px以下*/
+	#unity-webgl{
+		width: 450px ;
+		height: 800px ;
+	}
+
 @media screen and (max-height: 800px){/*1240px以下*/
 	#unity-webgl{
 		width: 360px ;
-		height: 680px ;
+		height: 640px ;
 	}
 }
 @media screen and (max-height: 600px){/*1023px以下*/
