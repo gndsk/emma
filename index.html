@@ -3,29 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ENMA's MIRROR</title>
+    <title>Unity WebGL Player | DashInTheMirror</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+<style type="text/css">
+
+.webgl{
+width:0px;
+padding-right: 56.25%;
+height:100%;
+position: relative;
+}
+.webgl iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+</style>
 
 
 
 
   </head>
   <body>
-  
-  
-  
-<iframe
- id="unity-webgl"
- loading="lazy" width="900px" height="1600px"
- src="game.html"
- scrolling="no" frameborder="0">
-</iframe>  
 
-  
-  
-  
-  
 
+
+<div style="width:450px;height:800px;overflow-x:hidden;border:1px solid #999">
+    <div style="width:450px;height:800px;overflow:hidden;">
+        <iframe src="game.html" frameborder="0" scrolling="no" width="900" height="1600" style="transform:scale(0.55);-o-transform:scale(0.55);-webkit-transform:scale(0.55);-moz-transform:scale(0.55);-ms-transform:scale(0.55);transform-origin:0 0;-o-transform-origin:0 0;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;"></iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
+ 
   </body>
 </html>

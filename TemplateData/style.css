@@ -16,29 +16,8 @@ body { padding: 0; margin: 0 }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 
 
-
   #unity-webgl{
 	/* 16:9 */
 	width: 900px ;/*デフォルトの横幅*/
 	height: 1600px ;/*デフォルトの縦幅*/
 }
-
-@media screen and (max-height: 1250px){/*1240px以下*/
-	#unity-webgl{
-		width: 630px ;
-		height: 1120px ;
-	}
-	
-@media screen and (max-height: 900px){/*1240px以下*/
-	#unity-webgl{
-		width: 450px ;
-		height: 800px ;
-	}
-
-@media screen and (max-height: 750px){/*1240px以下*/
-	#unity-webgl{
-		width: 360px ;
-		height: 640px ;
-	}
-}
-
