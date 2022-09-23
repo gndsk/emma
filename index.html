@@ -17,11 +17,6 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">DashInTheMirror</div>
-      </div>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -91,7 +86,6 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
@@ -112,7 +106,6 @@
             unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
-          alert(message);
         });
       };
       document.body.appendChild(script);
