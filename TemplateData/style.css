@@ -22,32 +22,6 @@ Unity-webgl
 ----------------------------------------------------------------------------*/
 #unity-webgl{
 	/* 16:9 */
-	width: 900px ;/*デフォルトの横幅*/
-	height: 1600px ;/*デフォルトの縦幅*/
-}
-@media screen and (max-height: 1240px){/*1240px以下*/
-	#unity-webgl{
-		width: 630px ;
-		height: 1120px ;
-	}
-}
-@media screen and (max-height: 1023px){/*1023px以下*/
-	#unity-webgl{
-		width: 450px ;
-		height: 800px ;
-	}
-}
-
-@media screen and (max-height: 800px){/*1023px以下*/
-	#unity-webgl{
-		width: 360px ;
-		height: 640px ;
-	}
-}
-
-@media screen and (max-height: 600px){/*1023px以下*/
-	#unity-webgl{
-		width: 270px ;
-		height: 480px ;
-	}
+	width: 450px ;/*デフォルトの横幅*/
+	height: 800px ;/*デフォルトの縦幅*/
 }
