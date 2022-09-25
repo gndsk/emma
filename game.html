@@ -97,28 +97,30 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+		var inH = Math.min( 1600,  Math.max( 400, window.top.innerHeight ) ) ;
+
+
+		var setW = Math.floor(inH * 95 /100 * 9 /16 ) + "px" ;
+		var setH = Math.floor( inH * 95 /100 ) + "px";
+
+
+        canvas.style.width = setW;
+        canvas.style.height = setH;
+        
+        loadingBar.style.width = setW;
+        loadingBar.style.height = setH;
+
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-//		var setW = "225px";
-//		var setH = "400px";
 
-//		var inW = window.outerWidth;
-//		var inH = window.outerHeight;
-
-		var inW = window.top.innerWidth;
-		var inH = window.top.innerHeight;
+		var inH = Math.min( 1600,  Math.max( 400, window.top.innerHeight ) ) ;
 
 
-		setW = Math.floor(inH * 95 /100 * 9 /16 ) + "px" ;
-		setH = Math.floor( inH * 95 /100 ) + "px";
+		var setW = Math.floor(inH * 95 /100 * 9 /16 ) + "px" ;
+		var setH = Math.floor( inH * 95 /100 ) + "px";
 
-// setW =window.parent.document.getElementById("dsize").style.width;
-
-// setH =window.parent.document.getElementById("dsize").style.height;
 
         canvas.style.width = setW;
         canvas.style.height = setH;
