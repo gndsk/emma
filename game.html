@@ -32,6 +32,17 @@
       <div id="unity-warning"> </div>
 
     </div>
+
+<br>
+
+<div id="cmt" style="background:#eeeeee;position:absolute;">
+※ゲーム画面が小さい場合、リロードをお試しください。<br>
+※端末によってはゲーム画面が正常に表示されない場合があります。<br>
+　ゲーム画面が黒くなる場合は、Firefox等のブラウザを使用するか、別の端末をお試しください。<br>
+</div>
+
+
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -39,6 +50,7 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+      var cmt = document.querySelector("#cmt");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -110,6 +122,8 @@
         loadingBar.style.width = setW;
         loadingBar.style.height = setH;
 
+		cmt.style.top = setH;
+
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
@@ -127,8 +141,9 @@
         
         loadingBar.style.width = setW;
         loadingBar.style.height = setH;
-
-
+		
+		
+		cmt.style.top = setH;
         
       }
 
